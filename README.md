@@ -1,2 +1,19 @@
-# airbnb-ml-portfolio
-ML to predict listing prices for Airbnb accommodations in Amsterdam. Portfolio Project
+# Amsterdam Airbnb Price Prediction: A Machine Learning Approach
+This is the repository from my [ML Price Prediction Portfolio Project](https://stellar-stroopwafel-ef58af.netlify.app/) that you can see [here](https://stellar-stroopwafel-ef58af.netlify.app/).
+
+## Amsterdam Inside-AirBnB Dataset
+
+Inside Airbnb is a mission driven project that provides data and advocacy about Airbnb's impact on residential communities.
+
+The dataset contains 7000 Amsterdam listings (each with 75 features) and 300k textual reviews from airbnb.com, scraped in March 2023. Oldest listings have reviews from as far as 2009. Additionally, for each listing, the dataset includes the price of stay for each day (night) since March 2023 till March 2024, as well as whether this day is available for booking, also scraped in March 2023.
+
+The features descriptions can be found in this [sheet from Inside Airbnb](https://docs.google.com/spreadsheets/d/1iWCNJcSutYqpULSQHlNyGInUvHg2BoUGoNRIGa6Szc4/edit#gid=1322284596).
+
+**File descriptions**:
+- `listings.csv`: Detailed Listings data
+- `calendar.csv`: Detailed Calendar Data
+- `reviews.csv`: Detailed Review Data
+- `listings.csv`: Summary information and metrics for listings in Amsterdam (good for visualisations).
+- `reviews.csv`: Summary Review data and Listing ID (to facilitate time based analytics and visualisations linked to a listing).
+- `neighbourhoods.csv` Neighbourhood list for geo filter. Sourced from city or open source GIS files.
+- `neighbourhoods.geojson` GeoJSON file of neighbourhoods of the city.
