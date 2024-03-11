@@ -1,0 +1,69 @@
+project: 
+  type: website
+  
+website: 
+  page-navigation: true
+  title: "Data Science Methods" 
+  site-url: "https://openscapes.github.io/quarto-website-tutorial" 
+
+  
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-by Daniel Redel, 2023"
+    
+  sidebar:
+    logo: "images/data_science_methods.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://github.com/dannyredel
+        text: "dannyredel"
+      - icon: github
+        href: https://github.com/dannyredel
+        text: "github.com/dannyredel"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/daniel-redel-14b052b6/
+        text: "LinkedIn"         
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: Welcome
+      - href: explore.qmd
+        text: Assignments
+      - section:
+        href: 1_unsupervised_learning.qmd
+        text: "1. Unsupervised Learning"
+        contents:
+          - href: lab1_pca.qmd
+            text: "1.1. Principal Components Analysis"
+          - href: lab1_clustering.qmd
+            text: "1.2. Clustering Methods"
+      - section:
+        href: 2_classification.qmd
+        text: "2. Classification"
+        contents:
+          - href: quarto-workflows/jupyter.md 
+            text: "2.1. Statistical Learning"
+          - href: learning-more.qmd
+            text: "2.2. Model Accuracy"
+
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
+filters:
+  - include-files.lua
+  - quarto
+
+  

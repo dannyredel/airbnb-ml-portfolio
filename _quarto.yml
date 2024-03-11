@@ -1,0 +1,57 @@
+project:
+  type: website
+
+website: 
+  page-navigation: true
+  title: "Airbnb Price Prediction: A Machine Learning Approach" 
+ 
+
+  page-footer:
+    right: "This page is built with ❤️ and [Quarto](https://quarto.org/)."
+    left: "&copy; CC-by Daniel Redel, 2023"
+
+  sidebar:
+    logo: "data-science-logo.png"
+    pinned: true
+    align: center
+    tools: 
+      - icon: globe
+        href: https://github.com/dannyredel
+        text: "dannyredel"
+      - icon: github
+        href: https://github.com/dannyredel
+        text: "github.com/dannyredel"
+      - icon: linkedin
+        href: https://www.linkedin.com/in/daniel-redel-14b052b6/
+        text: "LinkedIn"         
+
+    style: "docked"
+    search: true
+    collapse-level: 1
+    contents:
+      - href: index.qmd
+        text: "Intro: Airbnb ML Project"
+      - section:
+        href: preprocessing.ipynb
+        text: "Pre-Processing"
+      - section:
+        href: eda.ipynb
+        text: "Exploratory Data Analysis"
+      - section:
+        href: geospatial_analysis.ipynb
+        text: "Geospatial Analysis"
+      - section:
+        href: price_prediction_models.ipynb
+        text: "ML Price Prediction"
+
+
+format:
+  html:
+    theme:
+      light: [cosmo, theme.scss] # from https://github.com/sta210-s22/website/blob/main/_quarto.yml
+      dark: [cosmo, theme-dark.scss]
+    code-copy: true
+    code-overflow: wrap
+    toc: true
+
+
